@@ -50,20 +50,37 @@ function ProjectList() {
         </div>
       ))}
 
-      <button onClick={() => setPageNumber(pageNumber - 1)}>Previous</button>
+      <button
+        disabled={pageNumber === 1}
+        onClick={() => setPageNumber(pageNumber - 1)}
+      >
+        Previous
+      </button>
+
       {[...Array(totalPages)].map((_, index) => (
-        <button key={index + 1} onClick={() => setPageNumber(index + 1)}>
+        <button
+          key={index + 1}
+          onClick={() => setPageNumber(index + 1)}
+          disabled={pageNumber === index + 1}
+        >
           {index + 1}
         </button>
       ))}
 
-      <button onClick={() => setPageNumber(pageNumber + 1)}>Next</button>
+      <button
+        disabled={pageNumber === totalPages}
+        onClick={() => setPageNumber(pageNumber + 1)}
+      >
+        Next
+      </button>
 
       <br />
       <label>
         <select
           value={pageSize}
-          onChange={(p) => setPageSize(Number(p.target.value))}
+          onChange={(p) => (
+            setPageSize(Number(p.target.value)), setPageNumber(1)
+          )}
         >
           <option value="5">5</option>
           <option value="10">10</option>
