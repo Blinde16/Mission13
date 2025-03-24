@@ -68,3 +68,5 @@ C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\
 C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.pdb
 C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.genruntimeconfig.cache
 C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\ref\WaterProject.API.dll
+C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\WaterProject.API.sourcelink.json
+C:\Users\Blake\OneDrive\Desktop\WaterProject\backend\WaterProject.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
