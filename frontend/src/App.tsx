@@ -1,9 +1,9 @@
 import "./App.css";
 import { CartProvider } from "./context/CartContext";
 import CartPage from "./pages/CartPage";
-import DonatePage from "./pages/DonatePage";
-import ProjectsPage from "./pages/ProjectsPage";
+import BooksPage from "./pages/BooksPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AdminProjectsPage from "./pages/AdminBookPage";
 
 function App() {
   return (
@@ -11,13 +11,11 @@ function App() {
       <CartProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<ProjectsPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route
-              path="/donate/:projectName/:projectId"
-              element={<DonatePage />}
-            />
-            <Route path="/cart" element={<CartPage />} />
+            <Route path="/" element={<BooksPage />} />
+            <Route path="/BooksPage" element={<BooksPage />} />
+            <Route path="/BooksPage/:title/:bookId" element={<BooksPage />} />
+            <Route path="/cart/:title/:bookId" element={<CartPage />} />
+            <Route path="/adminBooks" element={<AdminProjectsPage />} />
           </Routes>
         </Router>
       </CartProvider>
